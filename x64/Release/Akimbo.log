@@ -1,0 +1,50 @@
+﻿  Source.cpp
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(8,17): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(11,37): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(18,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(45,88): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(45,54): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(47,87): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(47,54): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(49,88): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(49,54): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(51,88): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(51,54): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  Создание кода
+  2 of 142 functions ( 1.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  Akimbo.vcxproj -> C:\Users\Evgeniy\source\repos\Akimbo\x64\Release\Akimbo.exe
