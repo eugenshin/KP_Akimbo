@@ -21,6 +21,7 @@
 #include "..\class/header/game_menu.h"
 
 const int TS = 64;//tile size
+const int BS = 16;//bullet size
 const int Width = 960, Height = 960;//window size
 
 #define TILE0 "src/bb.png"

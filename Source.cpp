@@ -40,9 +40,8 @@ int main() {
 		else {
 			hero.move(time, level);
 			for (int i = 0; i < n; i++) {
-				bts[i].move(time);//движение снарядов
-				if ((bts[i].getS().getPosition().x > Width - 16) || (bts[i].getS().getPosition().x < 0) || (bts[i].getS().getPosition().y > Height - 16) || (bts[i].getS().getPosition().y < 0)) {
-					bts.erase(bts.begin() + i);//столкновение снарядов со стеной
+				if (bts[i].move(time, level)) {//движение снарядов
+					bts.erase(bts.begin() + i);//удаление снаряда в случае столкновения
 					i--;
 					n--;
 				}

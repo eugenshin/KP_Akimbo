@@ -29,8 +29,8 @@ void hero::move(float time, maps level)
 	if ((KeyUp + KeyLeft + KeyDown + KeyRight) == 2) {
 		move /= sqrt(2);//приравнять скорость по диагоналям к скорости вдоль осей
 	}
-	if (KeyUp && (y - move > 0)) {
-		if((level.getTile((int)(x / TS), (int)((y - move) / TS)) != '1') && (level.getTile((int)((x + TS - 1) / TS), (int)((y - move) / TS)) != '1'))//столкновение с объектами на карта
+	if (KeyUp && (y - move > 0)) {//столкновение героя с границами карты
+		if((level.getTile((int)(x / TS), (int)((y - move) / TS)) != '1') && (level.getTile((int)((x + TS - 1) / TS), (int)((y - move) / TS)) != '1'))//столкновение героя с объектами на карте
 			s.move(0, -move);
 	}
 	if (KeyLeft && (x - move > 0)) {

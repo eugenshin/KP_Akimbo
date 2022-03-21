@@ -1,5 +1,6 @@
 #pragma once
 #include "..\..\define\Define.h"
+#include "maps.h"
 using namespace sf;
 class bullet
 {
@@ -11,6 +12,6 @@ public:
 	bullet(int x, int y, float dx, float dy);
 	void setpos(int x, int y);
 	Sprite getS();
-	void move(float time);
+	bool move(float time, maps level);
 	void ttr();
 };
