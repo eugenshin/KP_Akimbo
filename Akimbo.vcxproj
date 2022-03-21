@@ -144,12 +144,16 @@
   <ItemGroup>
     <ClCompile Include="class\cpp\bullet.cpp" />
     <ClCompile Include="class\cpp\hero.cpp" />
+    <ClCompile Include="class\cpp\maps.cpp" />
+    <ClCompile Include="class\cpp\game_menu.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="class\header\bullet.h" />
     <ClInclude Include="define\Define.h" />
     <ClInclude Include="class\header\hero.h" />
+    <ClInclude Include="class\header\maps.h" />
+    <ClInclude Include="class\header\game_menu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

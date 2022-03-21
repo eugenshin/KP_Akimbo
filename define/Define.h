@@ -17,6 +17,12 @@
 
 #include "..\class/header/hero.h"
 #include "..\class/header/bullet.h"
+#include "..\class/header/maps.h"
+#include "..\class/header/game_menu.h"
 
-using namespace std;
-using namespace sf;
+const int TS = 64;//tile size
+const int Width = 960, Height = 960;//window size
+
+#define TILE0 "src/bb.png"
+#define HEROFILE "src/hero.png"
+#define BULLETFILE "src/bullet.png"
