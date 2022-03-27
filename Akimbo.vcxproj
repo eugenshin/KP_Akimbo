@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="class\cpp\button.cpp" />
     <ClCompile Include="class\cpp\bullet.cpp" />
     <ClCompile Include="class\cpp\hero.cpp" />
     <ClCompile Include="class\cpp\maps.cpp" />
@@ -149,6 +150,7 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="class\header\button.h" />
     <ClInclude Include="class\header\bullet.h" />
     <ClInclude Include="define\Define.h" />
     <ClInclude Include="class\header\hero.h" />

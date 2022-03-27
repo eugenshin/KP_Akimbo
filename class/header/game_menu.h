@@ -1,12 +1,11 @@
 #pragma once
 #include "..\..\define\Define.h"
-using namespace sf;
 class game_menu
 {
 	RectangleShape rect;
-	Sprite s;
-	Event event;
+	button menu, skills, skill1, skill2;
 public:
 	game_menu();
-	void show(RenderWindow* wnd);
+	bool mp(RenderWindow* wnd, int* sp);//mouse pressed
+	void show(RenderWindow* wnd, int *sp);
 };

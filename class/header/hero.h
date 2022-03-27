@@ -1,12 +1,9 @@
 #pragma once
 #include "..\..\define\Define.h"
-#include "bullet.h"
-#include "maps.h"
-using namespace sf;
-using namespace std;
 
 class hero
 {
+	int *sp;//skill points
 	const float DAT = 800,//default attack time
 		DBS = 0.0003,//default bullet speed
 		DMS = 0.0001,//default move speed
@@ -19,9 +16,11 @@ class hero
 	Sprite s;//hero sprite
 	Clock clock;//shooting timer
 public:
+	int* getSP();
 	hero(int x, int y);
 	void setpos(int x, int y);
 	Sprite getS();
 	void move(float time, maps level);
 	bool shooting(vector<bullet>* bts);
+	void rescale();
 };

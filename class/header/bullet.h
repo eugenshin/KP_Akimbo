@@ -1,7 +1,5 @@
 #pragma once
 #include "..\..\define\Define.h"
-#include "maps.h"
-using namespace sf;
 class bullet
 {
 	float spdx, spdy;

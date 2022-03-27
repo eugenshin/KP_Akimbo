@@ -1,10 +1,43 @@
-﻿  Source.cpp
-C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(11,7): warning C4305: инициализация: усечение из "double" в "const float"
-C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(12,7): warning C4305: инициализация: усечение из "double" в "const float"
-C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(17,14): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+﻿  hero.cpp
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(8,7): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(9,7): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(19,19): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(19,16): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(29,8): warning C4244: инициализация: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(30,5): warning C4244: инициализация: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(37,15): warning C4244: /=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(68,39): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(68,31): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(70,40): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(70,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(72,40): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(72,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(74,40): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(74,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(79,14): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(81,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(81,29): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(83,34): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(83,29): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(85,39): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(85,31): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(87,37): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(87,31): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(97,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(98,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(103,19): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(103,16): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
   Создание кода
-  17 of 153 functions (11.1%) were compiled, the rest were copied from previous compilation.
-    13 functions were new in current compilation
-    22 functions had inline decision re-evaluated but remain unchanged
+  0 of 199 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   Akimbo.vcxproj -> C:\Users\Evgeniy\source\repos\Akimbo\x64\Release\Akimbo.exe

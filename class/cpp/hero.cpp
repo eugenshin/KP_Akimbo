@@ -1,10 +1,17 @@
 #pragma once
 #include "..\..\define\Define.h"
-using namespace sf;
-using namespace std;
+
+int* hero::getSP()
+{
+	return sp;
+}
 
 hero::hero(int x, int y)
 {
+	sp = new int[3];
+	*sp = 5;
+	*(sp + 1) = 0;
+	*(sp + 2) = 0;
 	clock.restart();
 	t.loadFromFile(HEROFILE);
 	s.setTexture(t);
@@ -30,19 +37,19 @@ void hero::move(float time, maps level)
 		move /= sqrt(2);//приравнять скорость по диагоналям к скорости вдоль осей
 	}
 	if (KeyUp && (y - move > 0)) {//столкновение героя с границами карты
-		if((level.getTile((int)(x / TS), (int)((y - move) / TS)) != '1') && (level.getTile((int)((x + TS - 1) / TS), (int)((y - move) / TS)) != '1'))//столкновение героя с объектами на карте
+		if ((level.getTile((int)(x / TS), (int)((y - move) / TS)) != '1') && (level.getTile((int)((x + TS - 1) / TS), (int)((y - move) / TS)) != '1'))//столкновение героя с объектами на карте
 			s.move(0, -move);
 	}
 	if (KeyLeft && (x - move > 0)) {
-		if((level.getTile((int)((x - move) / TS), (int)(y / TS)) != '1') && (level.getTile((int)((x - move) / TS), (int)((y + TS - 1) / TS)) != '1'))
+		if ((level.getTile((int)((x - move) / TS), (int)(y / TS)) != '1') && (level.getTile((int)((x - move) / TS), (int)((y + TS - 1) / TS)) != '1'))
 			s.move(-move, 0);
 	}
 	if (KeyDown && (y + TS + move < Height)) {
-		if((level.getTile((int)(x / TS), (int)((y + TS + move) / TS)) != '1') && (level.getTile((int)((x + TS - 1) / TS), (int)((y + TS + move) / TS)) != '1'))
+		if ((level.getTile((int)(x / TS), (int)((y + TS + move) / TS)) != '1') && (level.getTile((int)((x + TS - 1) / TS), (int)((y + TS + move) / TS)) != '1'))
 			s.move(0, move);
 	}
 	if (KeyRight && (x + TS + move < Width)) {
-		if((level.getTile((int)((x + TS + move) / TS), (int)(y / TS)) != '1') && (level.getTile((int)((x + TS + move) / TS), (int)((y + TS - 1) / TS)) != '1'))
+		if ((level.getTile((int)((x + TS + move) / TS), (int)(y / TS)) != '1') && (level.getTile((int)((x + TS + move) / TS), (int)((y + TS - 1) / TS)) != '1'))
 			s.move(move, 0);
 	}
 }
@@ -83,6 +90,12 @@ bool hero::shooting(vector<bullet>* bts)
 		}
 	}
 	return false;
+}
+
+void hero::rescale()
+{
+	ms = DMS * (1 + *(sp + 1) * 0.2);
+	at = DAT / (1 + *(sp + 2) * 0.3);
 }
 
 void hero::setpos(int x, int y)
