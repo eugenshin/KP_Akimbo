@@ -7,6 +7,8 @@
     <ClInclude Include="class\header\maps.h" />
     <ClInclude Include="class\header\game_menu.h" />
     <ClInclude Include="class\header\button.h" />
+    <ClInclude Include="class\header\enemy.h" />
+    <ClInclude Include="class\header\object.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
@@ -15,5 +17,6 @@
     <ClCompile Include="class\cpp\maps.cpp" />
     <ClCompile Include="class\cpp\game_menu.cpp" />
     <ClCompile Include="class\cpp\button.cpp" />
+    <ClCompile Include="class\cpp\enemy.cpp" />
   </ItemGroup>
 </Project>

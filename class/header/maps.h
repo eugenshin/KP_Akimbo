@@ -1,13 +1,15 @@
 #pragma once
 #include "..\..\define\Define.h"
-class maps
+class maps:public object
 {
-	static const int N = 15;
 	String map[N];
-	Texture t;
-	Sprite s;
+	vector<vector<int>> sp;//spawn place. доступные места для появления противника
+	Texture t1;
+	Sprite s1;
+	void testsp();//вычисляет на карте подходящие места для появления противника
 public:
-	void draw(RenderWindow* wnd);
+	void draw(RenderWindow& wnd) override;
 	char getTile(int i, int j);
 	void lvl1();
+	vector<vector<int>> getSP();
 };

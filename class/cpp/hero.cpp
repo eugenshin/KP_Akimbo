@@ -1,27 +1,35 @@
 #pragma once
 #include "..\..\define\Define.h"
 
-int* hero::getSP()
+int hero::getSP(int n)
 {
-	return sp;
+	return sp[n];
 }
 
-hero::hero(int x, int y)
+bool hero::useskill(int n)
 {
-	sp = new int[3];
-	*sp = 5;
-	*(sp + 1) = 0;
-	*(sp + 2) = 0;
+	if ((n > 0) && (n < SKILLS)) {
+		if ((sp[0] > 0) && (sp[n] < 24)) {
+			sp[0] -= 1;
+			sp[n]++;
+			return 1;
+		}
+	}
+	return 0;
+}
+
+hero::hero()
+{
+	sp.push_back(30);//свободных очков умений
+	sp.push_back(0);//очков в 1 способности
+	sp.push_back(0);//очков во 2 способности
+	sp.push_back(0);//очков в 3 способности
+	sp.push_back(0);//очков в 4 способности
 	clock.restart();
 	t.loadFromFile(HEROFILE);
 	s.setTexture(t);
 	s.setScale(2, 2);
-	s.setPosition(x, y);
-}
-
-Sprite hero::getS()
-{
-	return s;
+	s.setPosition(100, 100);
 }
 
 void hero::move(float time, maps level)
@@ -54,10 +62,11 @@ void hero::move(float time, maps level)
 	}
 }
 
-bool hero::shooting(vector<bullet>* bts)
+void hero::shooting(vector<bullet>* bts)
 {
-	float x = s.getPosition().x;
-	float y = s.getPosition().y;
+	float x = s.getPosition().x,
+		y = s.getPosition().y;
+	int btsz = bullet::getDBS() + sp[3] * 2;//bullet size
 	bool KeyW = Keyboard::isKeyPressed(Keyboard::W),//стрельба
 		KeyA = Keyboard::isKeyPressed(Keyboard::A),
 		KeyS = Keyboard::isKeyPressed(Keyboard::S),
@@ -65,40 +74,71 @@ bool hero::shooting(vector<bullet>* bts)
 	if (clock.getElapsedTime().asMilliseconds() > at) {
 		if ((KeyW + KeyA + KeyS + KeyD) == 1) {//стрельба вдоль осей
 			if (KeyW)
-				(*bts).push_back(bullet(x + 24, y - 16, 0, -bs));
+				(*bts).push_back(bullet(x + (TS - btsz) / 2, y - btsz, 0, -bs, sp[3], sp[4]));
 				if (KeyA)
-					(*bts).push_back(bullet(x - 16, y + 24, -bs, 0));
+					(*bts).push_back(bullet(x - btsz, y + (TS - btsz) / 2, -bs, 0, sp[3], sp[4]));
 				if (KeyS)
-					(*bts).push_back(bullet(x + 24, y + TS, 0, bs));
+					(*bts).push_back(bullet(x + (TS - btsz) / 2, y + TS, 0, bs, sp[3], sp[4]));
 				if (KeyD)
-					(*bts).push_back(bullet(x + TS, y + 24, bs, 0));
+					(*bts).push_back(bullet(x + TS, y + (TS - btsz) / 2, bs, 0, sp[3], sp[4]));
 				clock.restart();
-				return true;
+				return;
 		}
 		if ((KeyW + KeyA + KeyS + KeyD) == 2) {//стрельба по диагоналям
 			float dbs = bs / sqrt(2);//diagonal bullet speed
 			if ((KeyW) && (KeyA))
-				(*bts).push_back(bullet(x, y, -dbs, -dbs));
+				(*bts).push_back(bullet(x - btsz / 2, y - btsz / 2, -dbs, -dbs, sp[3], sp[4]));
 			if ((KeyA) && (KeyS))
-				(*bts).push_back(bullet(x, y + TS, -dbs, dbs));
+				(*bts).push_back(bullet(x - btsz / 2, y + TS - btsz / 2, -dbs, dbs, sp[3], sp[4]));
 			if ((KeyS) && (KeyD))
-				(*bts).push_back(bullet(x + TS, y + TS, dbs, dbs));
+				(*bts).push_back(bullet(x + TS - btsz / 2, y + TS - btsz / 2, dbs, dbs, sp[3], sp[4]));
 			if ((KeyD) && (KeyW))
-				(*bts).push_back(bullet(x + TS, y, dbs, -dbs));
+				(*bts).push_back(bullet(x + TS - btsz / 2, y - btsz / 2, dbs, -dbs, sp[3], sp[4]));
 			clock.restart();
-			return true;
 		}
 	}
-	return false;
 }
 
 void hero::rescale()
 {
-	ms = DMS * (1 + *(sp + 1) * 0.2);
-	at = DAT / (1 + *(sp + 2) * 0.3);
+	ms = DMS * (1 + sp[1] * 0.2);//перерасчёт скорости передвижения
+	at = DAT / (1 + sp[2] * 0.1);//перерасчёт скорости стрельбы
 }
 
-void hero::setpos(int x, int y)
+Vector2f hero::getpos()
 {
-	s.setPosition(x, y);
+	return s.getPosition();
+}
+
+void hero::lvlup()
+{
+	sp[0]++;
+}
+
+bool hero::hit(vector<enemy>* enm)
+{
+	for(int i = 0; i < enm->size(); i++) {
+		if (((*enm)[i].getPos().x + TS > s.getPosition().x) && ((*enm)[i].getPos().x < s.getPosition().x + TS) && ((*enm)[i].getPos().y + TS > s.getPosition().y) && ((*enm)[i].getPos().y < s.getPosition().y + TS)) {//коснулся ли враг игрока?
+			return 1;
+		}
+	}
+	return 0;
+}
+
+int hero::getMAXSKILLS()
+{
+	return MAXSKILLS;
+}
+
+void hero::restart()
+{
+	s.setPosition(100, 100);
+	for (int i = 0; i < SKILLS; i++)
+		sp[i] = 0;
+	rescale();
+}
+
+void hero::draw(RenderWindow& wnd)
+{
+	wnd.draw(s);
 }

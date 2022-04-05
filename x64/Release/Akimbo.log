@@ -1,43 +1,147 @@
-﻿  hero.cpp
-C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(8,7): warning C4305: инициализация: усечение из "double" в "const float"
-C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(9,7): warning C4305: инициализация: усечение из "double" в "const float"
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(19,19): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(19,16): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(29,8): warning C4244: инициализация: преобразование "const T" в "int", возможна потеря данных
+﻿  Source.cpp
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\enemy.h(5,38): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(8,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(9,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(21,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(25,15): warning C4244: инициализация: преобразование "sf::Int64" в "double", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(92,15): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(97,22): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(103,18): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\Source.cpp(22,9): warning C4101: time: неиспользованная локальная переменная
+  bullet.cpp
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\enemy.h(5,38): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(8,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(9,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\bullet.cpp(17,19): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\bullet.cpp(17,16): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  button.cpp
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\enemy.h(5,38): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(8,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(9,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(29,15): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(29,11): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(30,16): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(30,12): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(31,13): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(31,9): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(48,26): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(30,5): warning C4244: инициализация: преобразование "const T" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(48,23): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(37,15): warning C4244: /=: преобразование "double" в "float", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(68,39): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(68,31): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(70,40): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(70,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(72,40): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(72,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(74,40): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(74,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(79,14): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(50,21): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(50,18): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(54,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(54,21): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(62,19): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(62,16): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(66,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\button.cpp(66,21): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  enemy.cpp
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\enemy.h(5,38): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(8,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(9,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(6,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(23,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(23,19): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(29,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(30,6): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(31,6): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(32,6): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(69,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(69,19): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(123,10): warning C4244: инициализация: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(124,7): warning C4244: инициализация: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(125,7): warning C4244: инициализация: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\enemy.cpp(126,7): warning C4244: инициализация: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  game_menu.cpp
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\enemy.h(5,38): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(8,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(9,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\game_menu.cpp(28,11): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\game_menu.cpp(28,43): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\game_menu.cpp(29,22): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\game_menu.cpp(29,18): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\game_menu.cpp(31,22): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\game_menu.cpp(31,18): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\game_menu.cpp(33,22): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\game_menu.cpp(33,18): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\game_menu.cpp(35,22): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\game_menu.cpp(35,18): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  hero.cpp
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\enemy.h(5,38): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(8,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(9,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(37,8): warning C4244: инициализация: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(38,5): warning C4244: инициализация: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(45,15): warning C4244: /=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(77,52): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(77,31): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(79,42): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(79,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(81,53): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
 C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(81,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(81,29): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(83,34): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(83,29): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(85,39): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(85,31): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(87,37): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(87,31): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(97,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(98,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(103,19): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(103,16): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(83,40): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(83,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(88,14): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(90,45): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(90,31): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(92,50): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(92,31): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(94,55): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(94,36): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(96,50): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(96,36): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(104,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\hero.cpp(105,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  maps.cpp
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\enemy.h(5,38): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(8,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\header\hero.h(9,15): warning C4305: инициализация: усечение из "double" в "const float"
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\maps.cpp(25,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\maps.cpp(25,20): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\maps.cpp(29,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Evgeniy\source\repos\Akimbo\class\cpp\maps.cpp(29,21): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
   Создание кода
-  0 of 199 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  7 of 474 functions ( 1.5%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   Akimbo.vcxproj -> C:\Users\Evgeniy\source\repos\Akimbo\x64\Release\Akimbo.exe

@@ -131,6 +131,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Users\Evgeniy\source\repos\Akimbo\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,6 +145,7 @@
   <ItemGroup>
     <ClCompile Include="class\cpp\button.cpp" />
     <ClCompile Include="class\cpp\bullet.cpp" />
+    <ClCompile Include="class\cpp\enemy.cpp" />
     <ClCompile Include="class\cpp\hero.cpp" />
     <ClCompile Include="class\cpp\maps.cpp" />
     <ClCompile Include="class\cpp\game_menu.cpp" />
@@ -152,10 +154,12 @@
   <ItemGroup>
     <ClInclude Include="class\header\button.h" />
     <ClInclude Include="class\header\bullet.h" />
+    <ClInclude Include="class\header\enemy.h" />
     <ClInclude Include="define\Define.h" />
     <ClInclude Include="class\header\hero.h" />
     <ClInclude Include="class\header\maps.h" />
     <ClInclude Include="class\header\game_menu.h" />
+    <ClInclude Include="class\header\object.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

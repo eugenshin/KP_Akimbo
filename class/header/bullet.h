@@ -1,15 +1,18 @@
 #pragma once
 #include "..\..\define\Define.h"
-class bullet
+class bullet:public object
 {
-	float spdx, spdy;
-	int dmg = 1;
-	Texture t;
-	Sprite s;
+	static constexpr int DBS = 16,//default bullet size
+		DBD = 5;//default bullet damage
+	float spdx, spdy;//speed x, y
+	int dmg,//damage
+		bs;//bullet size
 public:
-	bullet(int x, int y, float dx, float dy);
-	void setpos(int x, int y);
-	Sprite getS();
+	bullet(int x, int y, float dx, float dy, int skill3, int skill4);
+	Vector2f getPos();
+	void draw(RenderWindow& wnd) override;
 	bool move(float time, maps level);
-	void ttr();
+	int getdmg();
+	int getbs();
+	static int getDBS();
 };
