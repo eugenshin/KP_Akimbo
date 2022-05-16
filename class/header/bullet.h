@@ -11,7 +11,7 @@ public:
 	bullet(int x, int y, float dx, float dy, int skill3, int skill4);
 	Vector2f getPos();
 	void draw(RenderWindow& wnd) override;
-	bool move(float time, maps level);
+	bool move(float time, maps level);//движение снаряда
 	int getdmg();
 	int getbs();
 	static int getDBS();

@@ -20,7 +20,7 @@ bool hero::useskill(int n)
 
 hero::hero()
 {
-	sp.push_back(30);//свободных очков умений
+	sp.push_back(0);//свободных очков умений
 	sp.push_back(0);//очков в 1 способности
 	sp.push_back(0);//очков во 2 способности
 	sp.push_back(0);//очков в 3 способности

@@ -4,8 +4,8 @@
 int main() {
 	RenderWindow wnd(VideoMode(Width, Height), "Akimbo");//окно
 	hero hero;//персонаж, герой
-	vector<bullet> bts;//вектор пуль
-	vector<enemy> enm;//нпс, враг
+	vector<bullet> bts;//вектор снарядов
+	vector<enemy> enm;//враг
 	maps level;//уровень, карта
 	level.lvl1();//загрузка 1-ого уровня
 	game_menu gm;//объект - меню
@@ -29,10 +29,10 @@ int main() {
 		while (wnd.pollEvent(event)) {
 			if (event.type == Event::KeyPressed)
 				if (event.key.code == Keyboard::Escape)
-					pause = !pause;
+					pause = !pause;//переключить паузу при нажатии escape
 			if (event.type == Event::Closed)
 				wnd.close();
-			if (pause) {
+			if (pause) {//игра на паузе
 				if (event.type == Event::MouseButtonPressed)
 					if (event.key.code == Mouse::Left) {
 						if (gm.smp(wnd, hero))
@@ -50,7 +50,7 @@ int main() {
 							wnd.close();
 					}
 			}
-			if (eg) {
+			if (eg) {//конец игры
 				if (event.type == Event::MouseButtonPressed)
 					if (event.key.code == Mouse::Left)
 						if (ok.press(Mouse::getPosition(wnd).x, Mouse::getPosition(wnd).y)) {
@@ -63,25 +63,23 @@ int main() {
 						}
 			}
 		}
-		//блок отрисовки
+
+		//отрисовка
 		wnd.clear(Color::Green);//очистка окна
 		level.draw(wnd);//отрисовка уровня
 		hero.draw(wnd);//отрисовка героя
 		timer.change_text("Time: " + to_string((int)(timer_value / 1000000)));
 		timer.draw(wnd);//отрисовка таймера
 		for (int i = 0; i < bts.size(); i++) {//отрисовка снарядов
-			//bts[i].ttr();
 			bts[i].draw(wnd);
-			//wnd.draw(bts[i].getS());
 		}
 		for (int i = 0; i < enm.size(); i++) {//отрисовка врагов
 			enm[i].draw(wnd);
 		}
 
-
 		if (eg) {//если игра окончена
-			end_game.change_text("Your score\n" + to_string((int)(timer_value / 1000000)));//отобразить счёт
-			end_game.draw(wnd);
+			end_game.change_text("Your score\n" + to_string((int)(timer_value / 1000000)));
+			end_game.draw(wnd);//отобразить счёт
 			ok.draw(wnd);//отобразить "OK"
 		}
 		else {
@@ -101,13 +99,14 @@ int main() {
 				}
 				for (int i = 0; i < enm.size(); i++) {//поведение врагов
 					enm[i].move(time, level, hero.getpos());//движение врагов
-					int k = enm[i].hit(&bts);//если по врагу попал снаряд
+					int k;//номер врага в векторе, по которому попал снаряд
+					k = enm[i].hit(&bts);//если по врагу попал снаряд
 					if (k >= 0) {//попадание по врагу
-						bts.erase(bts.begin() + k);
-						if (enm[i].isdead()) {//мертв ли враг
-							enm.erase(enm.begin() + i);
-							i--;
-							hero.lvlup();
+						bts.erase(bts.begin() + k);//уничтожить снаряд
+						if (enm[i].isdead()) {//если враг мертв
+							enm.erase(enm.begin() + i);//удалить его
+							--i;
+							hero.lvlup();//дать герою уровень
 						}
 					}
 				}

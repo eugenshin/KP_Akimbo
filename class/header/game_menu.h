@@ -8,5 +8,5 @@ public:
 	game_menu();
 	bool smp(RenderWindow& wnd, hero& hero);//skill mouse pressed
 	bool mmp(RenderWindow& wnd, int n);//menu mouse pressed
-	void show(RenderWindow& wnd, hero& hero);
+	void show(RenderWindow& wnd, hero& hero);//отобразить
 };

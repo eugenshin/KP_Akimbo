@@ -6,5 +6,5 @@ protected:
 	Texture t;
 	Sprite s;
 public:
-	virtual void draw(RenderWindow& wnd) = 0;
+	virtual void draw(RenderWindow& wnd) = 0;//отрисовать
 };
